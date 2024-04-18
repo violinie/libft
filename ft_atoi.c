@@ -6,7 +6,7 @@
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:31:13 by hanacop           #+#    #+#             */
-/*   Updated: 2024/04/18 12:22:07 by hanacop          ###   ########.fr       */
+/*   Updated: 2024/04/18 14:26:33 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,7 @@ int	atoi(const char *nptr)
 
 	i = 0;
 	while (nptr[i] && ft_isspace(nptr[i]))
-	{
 		i++;
-	}
 	if (nptr[i] == '+' || nptr[i] == '-')
 	{
 		if (nptr[i] == '-')
