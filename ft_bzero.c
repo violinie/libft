@@ -1,28 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 14:32:38 by hanacop           #+#    #+#             */
-/*   Updated: 2024/04/18 14:48:40 by hanacop          ###   ########.fr       */
+/*   Created: 2024/04/18 14:38:17 by hanacop           #+#    #+#             */
+/*   Updated: 2024/04/18 14:38:18 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	int	i;
+	char	*temp;
+	size_t	i;
 
+	temp = (char *)s;
 	i = 0;
-	while (n > 0 && s1[i])
+	while (n > 0)
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+		temp[i] = '\0';
 		i++;
 		n--;
 	}
-	return (*s1 - *s2);
 }

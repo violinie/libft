@@ -1,28 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 14:32:38 by hanacop           #+#    #+#             */
-/*   Updated: 2024/04/18 14:48:40 by hanacop          ###   ########.fr       */
+/*   Created: 2024/05/01 12:07:59 by hanacop           #+#    #+#             */
+/*   Updated: 2024/05/01 12:07:59 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <stdio.h>
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+static void	*ft_memcpy(void *dest, const void *src, size_t n);
+
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-	int	i;
+	char temp[n];
+	ft_memcpy(temp, src, n);
+	ft_memcpy(dest, temp, n);
+	return (dest);
+}
 
+void	*ft_memcpy(void *dest, const void *src, size_t n)
+{
+	unsigned char		*temp_d;
+	const unsigned char	*temp_s;
+	size_t				i;
+
+	temp_d = dest;
+	temp_s = src;
 	i = 0;
-	while (n > 0 && s1[i])
+	while (n > 0)
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+		temp_d[i] = temp_s[i];
 		i++;
 		n--;
 	}
-	return (*s1 - *s2);
+	return (dest);
 }
