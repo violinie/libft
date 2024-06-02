@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hcopakov <hcopakov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:32:13 by hanacop           #+#    #+#             */
-/*   Updated: 2024/04/18 12:16:28 by hanacop          ###   ########.fr       */
+/*   Updated: 2024/05/28 16:31:20 by hcopakov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isprint(int c)
 {
-	return (c >= 33 && c <= 126);
+	return (c >= 32 && c <= 126);
 }

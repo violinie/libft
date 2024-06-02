@@ -6,11 +6,11 @@
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 12:04:28 by hanacop           #+#    #+#             */
-/*   Updated: 2024/05/01 12:08:06 by hanacop          ###   ########.fr       */
+/*   Updated: 2024/06/01 16:46:05 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
+#include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

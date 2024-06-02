@@ -6,7 +6,7 @@
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/17 14:32:38 by hanacop           #+#    #+#             */
-/*   Updated: 2024/04/18 14:48:40 by hanacop          ###   ########.fr       */
+/*   Updated: 2024/06/02 15:05:02 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,13 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	int	i;
 
 	i = 0;
-	while (n > 0 && s1[i])
+	while (i < n && s1[i])
 	{
 		if (s1[i] != s2[i])
 			return (s1[i] - s2[i]);
 		i++;
-		n--;
 	}
-	return (*s1 - *s2);
+	if (n == 0 || s1[i])
+		return 0;
+	return (s1[i] - s2[i]);
 }
