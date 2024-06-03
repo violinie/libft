@@ -19,6 +19,8 @@ ft_strlcat.c \
 ft_strlcpy.c \
 ft_strlen.c \
 ft_strncmp.c \
+ft_strchr.c \
+ft_strrchr.c \
 
 OBJS = ${SRCS:.c=.o}
 
