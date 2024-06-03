@@ -6,7 +6,7 @@
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/01 12:08:12 by hanacop           #+#    #+#             */
-/*   Updated: 2024/06/01 17:07:53 by hanacop          ###   ########.fr       */
+/*   Updated: 2024/06/03 13:11:27 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	if (size == 0)
 		return (src_len);
 	i = 0;
-	while(i < size - 1 && src[i])
+	while (i < size - 1 && src[i])
 	{
 		dest[i] = src[i];
 		i++;

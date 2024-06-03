@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hcopakov <hcopakov@student.42.fr>          +#+  +:+       +#+        */
+/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/28 13:43:52 by hcopakov          #+#    #+#             */
-/*   Updated: 2024/05/28 16:39:57 by hcopakov         ###   ########.fr       */
+/*   Updated: 2024/06/03 13:11:08 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,4 +40,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	*(dst + i) = '\0';
 	return (d_len + s_len);
 }
-
