@@ -1,34 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/03 17:41:26 by hanacop           #+#    #+#             */
-/*   Updated: 2024/06/03 17:56:34 by hanacop          ###   ########.fr       */
+/*   Created: 2024/06/03 17:51:02 by hanacop           #+#    #+#             */
+/*   Updated: 2024/06/04 19:56:18 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t elc, size_t els)
+char *ft_strdup(const char *s)
 {
-	void	*ptr;
-	size_t	total_size;
+	char *dup;
+	size_t len;
 
-	if (elc == 0 || els == 0)
-	{
-		elc = 1;
-		els = 1;
-	}
-	total_size = elc * els;
-	if (total_size < elc || total_size < els)
+	len = ft_strlen(s) + 1;
+	dup = (char *)malloc(len);
+	if (!dup)
 		return (NULL);
-	ptr = malloc(total_size);
-	if (!ptr)
-		return (NULL);
-	ft_bzero(ptr, total_size);
-	return (ptr);
+	ft_memcpy(dup, s, len);
+	return (dup);
 }
-
