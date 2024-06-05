@@ -6,7 +6,7 @@
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 12:36:21 by hanacop           #+#    #+#             */
-/*   Updated: 2024/06/05 22:34:37 by hanacop          ###   ########.fr       */
+/*   Updated: 2024/06/05 22:36:26 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	count_words(char const *s, char c)
 {
 	size_t	i;
-	int	num;
+	int		num;
 
 	i = 0;
 	num = 0;
@@ -33,7 +33,7 @@ static int	count_words(char const *s, char c)
 
 static char	*allocate_and_copy_substring(const char *s, char c)
 {
-	size_t		i;
+	size_t	i;
 	char	*out;
 
 	i = 0;
@@ -51,7 +51,7 @@ static char	*allocate_and_copy_substring(const char *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	size_t		i;
+	size_t	i;
 	int		len;
 	char	**out;
 

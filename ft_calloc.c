@@ -6,7 +6,7 @@
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 17:41:26 by hanacop           #+#    #+#             */
-/*   Updated: 2024/06/03 17:56:34 by hanacop          ###   ########.fr       */
+/*   Updated: 2024/06/05 22:35:56 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,3 @@ void	*ft_calloc(size_t elc, size_t els)
 	ft_bzero(ptr, total_size);
 	return (ptr);
 }
-
