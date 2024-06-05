@@ -6,7 +6,7 @@
 /*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/05 12:51:30 by hanacop           #+#    #+#             */
-/*   Updated: 2024/06/05 22:36:48 by hanacop          ###   ########.fr       */
+/*   Updated: 2024/06/05 23:26:36 by hanacop          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	count_digits(int num)
 {
-	int	count;
+	size_t	count;
 
 	count = 0;
 	if (num < 0)
