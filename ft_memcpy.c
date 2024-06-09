@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hcopakov <hcopakov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/18 12:04:28 by hanacop           #+#    #+#             */
-/*   Updated: 2024/06/01 16:46:05 by hanacop          ###   ########.fr       */
+/*   Created: 2024/06/06 11:37:05 by hcopakov          #+#    #+#             */
+/*   Updated: 2024/06/06 11:37:06 by hcopakov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	temp_d = dest;
 	temp_s = src;
 	i = 0;
+	if (!temp_d && !temp_s)
+		return (NULL);
 	while (n > 0)
 	{
 		temp_d[i] = temp_s[i];
