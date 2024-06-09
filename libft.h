@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hcopakov <hcopakov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/20 14:19:08 by hcopakov          #+#    #+#             */
-/*   Updated: 2024/06/05 22:37:10 by hanacop          ###   ########.fr       */
+/*   Created: 2024/06/06 11:45:52 by hcopakov          #+#    #+#             */
+/*   Updated: 2024/06/07 10:43:54 by hcopakov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int		ft_atoi(const char *nptr);
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t elc, size_t els);
 int		ft_isalnum(char c);
-int		ft_isalpha(char c);
+int		ft_isalpha(int c);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
