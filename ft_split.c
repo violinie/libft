@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hcopakov <hcopakov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 12:36:21 by hanacop           #+#    #+#             */
-/*   Updated: 2024/06/05 22:36:26 by hanacop          ###   ########.fr       */
+/*   Created: 2024/06/06 11:35:03 by hcopakov          #+#    #+#             */
+/*   Updated: 2024/06/06 17:04:05 by hcopakov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ static char	*allocate_and_copy_substring(const char *s, char c)
 char	**ft_split(char const *s, char c)
 {
 	size_t	i;
-	int		len;
+	size_t	len;
 	char	**out;
 
 	len = count_words(s, c);
