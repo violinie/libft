@@ -1,5 +1,5 @@
 NAME = libft.a
-CC = gcc
+CC = cc
 CCFLAGS = -Wall -Werror -Wextra
 RM = rm -f
 LIBC = ar rc
@@ -37,6 +37,8 @@ ft_putchar_fd.c \
 ft_putstr_fd.c \
 ft_putendl_fd.c \
 ft_putnbr_fd.c \
+ft_tolower.c \
+ft_toupper.c \
 
 OBJS = ${SRCS:.c=.o}
 
@@ -44,6 +46,9 @@ all: ${NAME}
 
 ${NAME}: ${OBJS}
 	${LIBC} ${NAME} ${OBJS}
+
+%.o: %.c
+	${CC} ${CCFLAGS} -c $< -o $@
 
 clean:
 	${RM} ${OBJS}
