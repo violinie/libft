@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hcopakov <hcopakov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 14:32:41 by hanacop           #+#    #+#             */
-/*   Updated: 2024/04/18 12:12:27 by hanacop          ###   ########.fr       */
+/*   Created: 2024/06/06 11:34:23 by hcopakov          #+#    #+#             */
+/*   Updated: 2024/06/06 11:55:38 by hcopakov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	tolower(int c)
+int	ft_tolower(int c)
 {
-	if (c <= 65 && c >= 90)
-	{
+	if (c >= 65 && c <= 90)
 		return (c + 32);
-	}
 	return (c);
 }
