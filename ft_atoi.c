@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hcopakov <hcopakov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/04/17 14:31:13 by hanacop           #+#    #+#             */
-/*   Updated: 2024/06/01 16:01:50 by hanacop          ###   ########.fr       */
+/*   Created: 2024/06/06 11:31:50 by hcopakov          #+#    #+#             */
+/*   Updated: 2024/06/07 09:26:09 by hcopakov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ static int	ft_isspace(int c)
 
 int	ft_atoi(const char *nptr)
 {
-	int	res;
-	int	sign;
-	int	i;
+	int		res;
+	int		sign;
+	size_t	i;
 
 	res = 0;
 	sign = 1;
