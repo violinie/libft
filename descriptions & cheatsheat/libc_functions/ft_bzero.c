@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hcopakov <hcopakov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/18 14:38:17 by hanacop           #+#    #+#             */
-/*   Updated: 2024/06/03 20:04:16 by hanacop          ###   ########.fr       */
+/*   Updated: 2024/06/06 14:32:36 by hcopakov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 // "erases the data in the n bytes of the memory starting at the location pointed to by s, by writing zeros (bytes containing '\0') to that area"
 // = sets all bytes in the memory area that starts at the s pointer address to zero

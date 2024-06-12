@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hanacop <hanacop@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hcopakov <hcopakov@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/03 17:41:26 by hanacop           #+#    #+#             */
-/*   Updated: 2024/06/05 23:15:09 by hanacop          ###   ########.fr       */
+/*   Updated: 2024/06/06 14:45:30 by hcopakov         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../libft.h"
 
 // allocates memory for an array of elc elements, each of size els, and initializes the memory to zero
 // elc = element count
